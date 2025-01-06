@@ -167,8 +167,13 @@ def run_backtest(data, model):
 # Main Function
 if __name__ == "__main__":
     stock_symbol = sys.argv[1] if len(sys.argv) > 1 else "QQQ"
-    start_date = sys.argv[2] if len(sys.argv) > 2 else "2024-06-01"
-    end_date = sys.argv[3] if len(sys.argv) > 3 else "2025-01-03"
+    start_date = "2024-06-01"  # Fixed start date (can also be dynamic)
+    
+    # Dynamically set yesterday's date
+    from datetime import datetime, timedelta
+    yesterday = datetime.now() - timedelta(days=1)
+    end_date = yesterday.strftime('%Y-%m-%d')
+    
     fetch_stock_data(stock_symbol, start_date, end_date)
     data = load_and_process_data(stock_symbol)
     model = train_model(data)
