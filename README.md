@@ -42,7 +42,7 @@ This script implements a pipeline for stock data analysis and backtesting using 
 	•	Define Backtrader’s data feed and strategy.
 	•	Run a backtest.
 	•	Can be executed from the command line with the following optional arguments:
-	•	Stock symbol (default: DJI).
+	•	Stock symbol (default: QQQ).
 	•	Start date (default: 2024-06-01).
 	•	End date (default: 2025-01-03).
 
