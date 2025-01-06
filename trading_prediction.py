@@ -166,7 +166,7 @@ def run_backtest(data, model):
 
 # Main Function
 if __name__ == "__main__":
-    stock_symbol = sys.argv[1] if len(sys.argv) > 1 else "DJI"
+    stock_symbol = sys.argv[1] if len(sys.argv) > 1 else "QQQ"
     start_date = sys.argv[2] if len(sys.argv) > 2 else "2024-06-01"
     end_date = sys.argv[3] if len(sys.argv) > 3 else "2025-01-03"
     fetch_stock_data(stock_symbol, start_date, end_date)
