@@ -1,3 +1,8 @@
+packages required:
+pip install alpaca-trade-api pandas numpy scikit-learn backtrader matplotlib joblib TA-Lib
+
+---
+
 This script implements a pipeline for stock data analysis and backtesting using a machine learning model to predict stock price movements. Here’s a breakdown of its functionality:
 
 1. Fetch Stock Data (Using Alpaca API)
