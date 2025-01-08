@@ -1,6 +1,9 @@
 packages required:
 pip install alpaca-trade-api pandas numpy scikit-learn backtrader matplotlib joblib TA-Lib
 
+usage: python trading_prediction.py {symbol} {start_date} {end_date}
+start_date and end_date are optional
+default start_date is 2024-01-01 and default end_date is today
 ---
 
 This script implements a pipeline for stock data analysis and backtesting using a machine learning model to predict stock price movements. Here’s a breakdown of its functionality:
@@ -48,8 +51,8 @@ This script implements a pipeline for stock data analysis and backtesting using 
 	•	Run a backtest.
 	•	Can be executed from the command line with the following optional arguments:
 	•	Stock symbol (default: QQQ).
-	•	Start date (default: 2024-06-01).
-	•	End date (default: 2025-01-03).
+	•	Start date (default: 2024-01-01).
+	•	End date (default: todays date).
 
 Key Libraries Used
 	•	Alpaca API: Fetching stock market data.
