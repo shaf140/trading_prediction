@@ -9,8 +9,8 @@ import talib
 import sys
 
 # Alpaca API credentials
-API_KEY = 'AK1N4VMNGYEF42BFGXPQ'
-SECRET_KEY = 'TI64nqrUXNqddFogFyl9Xbxr62qf80ro8GV72aFB'
+API_KEY = 'apikey'
+SECRET_KEY = 'secretkey'
 BASE_URL = 'https://api.alpaca.markets'
 
 # Step 1: Fetch Stock Data
